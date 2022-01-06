@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +44,6 @@
   },
   "keywords": [],
   "author": "Ardy <cryptoardy@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://0xArdy.github.io/todo-react-app"
 }
