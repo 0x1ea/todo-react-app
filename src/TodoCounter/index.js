@@ -5,10 +5,10 @@ import {TodoContext} from '../TodoContext'
 
 function TodoCounter(props) {
 
-  const {totalTodos, completedTodos} = React.useContext(TodoContext);
+  const {totaltodos, completedTodos} = React.useContext(TodoContext);
 
   return (
-    <h2 className="TodoCounter">Has completado {completedTodos} de {totalTodos} TODOs &#128204;</h2>
+    <h2 className="TodoCounter">Has completado {completedTodos} de {totaltodos} TODOs &#128204;</h2>
   );
 }
 
