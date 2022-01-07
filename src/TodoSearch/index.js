@@ -1,11 +1,8 @@
 import React from 'react';
-import { TodoContext } from '../TodoContext';
 import './TodoSearch.css';
 
-function TodoSearch() {
+function TodoSearch({setSearchValue, searchValue}) {
   // Cuando se llama la funcion setState se vuelve a cargar el componente
-
-  const {searchValue, setSearchValue} = React.useContext(TodoContext)
 
   const onSearchValueChange = (event) => {
     console.log(event.target.value)
