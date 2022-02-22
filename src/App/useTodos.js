@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
-function useTodos() {
+export function useTodos() {
 
   const {
     item: todos, 
@@ -68,5 +68,4 @@ function useTodos() {
   )
 }
 
-export { useTodos };
 

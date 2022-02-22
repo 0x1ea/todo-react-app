@@ -1,7 +1,7 @@
 import React from 'react';
 import './TodoItem.css';
 
-function TodoItem(props) {
+export function TodoItem(props) {
 
   return (
     <li className="TodoItem">
@@ -11,7 +11,7 @@ function TodoItem(props) {
         onClick={props.onComplete}
         
       >
-        V
+        ✔
       </span>
       <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}>
         {props.text}
@@ -20,10 +20,8 @@ function TodoItem(props) {
         className="Icon Icon-delete"
         onClick={props.onDelete}
       >
-        X
+        ❌
       </span>
     </li>
   );
 }
-
-export { TodoItem };

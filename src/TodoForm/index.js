@@ -1,7 +1,7 @@
 import React from 'react';
 import './Form.css'
 
-function TodoForm({addTodo, setOpenModal}) {
+export function TodoForm({addTodo, setOpenModal}) {
 
   const [newTodoValue, setNewTodoValue] = React.useState("");
 
@@ -52,5 +52,3 @@ function TodoForm({addTodo, setOpenModal}) {
   )
 }
 
-
-export { TodoForm }

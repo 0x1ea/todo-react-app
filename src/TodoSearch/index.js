@@ -1,7 +1,7 @@
 import React from 'react';
 import './TodoSearch.css';
 
-function TodoSearch({setSearchValue, searchValue}) {
+export function TodoSearch({setSearchValue, searchValue, loading}) {
   // Cuando se llama la funcion setState se vuelve a cargar el componente
 
   const onSearchValueChange = (event) => {
@@ -15,8 +15,7 @@ function TodoSearch({setSearchValue, searchValue}) {
       placeholder="Studying React" 
       value={searchValue}
       onChange={onSearchValueChange}
+      disabled={loading}
     />
   );
 }
-
-export { TodoSearch };
